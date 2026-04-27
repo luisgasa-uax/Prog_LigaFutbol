@@ -22,6 +22,7 @@
   - id
   - Nombre
   - Precio
+  - Clases hijas
     - Jugador
       - Dorsal
       - Posición -> TipoPosicion (enumeración)
