@@ -29,6 +29,7 @@ public enum TipoPosicion {
         return descripcion;
     }
 
+    //todo dentro de la clase incluso el Strin builder bro ·<·
     @Override
     public String toString() {
         StringBuilder sb= new StringBuilder();
