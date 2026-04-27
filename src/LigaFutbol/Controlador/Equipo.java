@@ -25,6 +25,7 @@ public class Equipo {
         boolean resultado;
         if (buscarFichajePorId(fichaje.getId()) != null){
             resultado = true;
+            fichajes.add(fichaje);
         } else {
             resultado = false;
         }
