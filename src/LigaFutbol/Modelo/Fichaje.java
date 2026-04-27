@@ -22,6 +22,10 @@ public class Fichaje {
         return id;
     }
 
+    public void setPrecio(int precio) {
+        this.precio = precio;
+    }
+
     @Override
     public String toString(){
         String resultado;

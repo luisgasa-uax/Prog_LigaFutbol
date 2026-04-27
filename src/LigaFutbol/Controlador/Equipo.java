@@ -65,6 +65,21 @@ public class Equipo {
     }
 
     // modificar fichaje por id
+    public boolean modificarFichajePorId(int id, int nuevoPrecio){
+        boolean resultado;
+        Fichaje fichajeAModificar;
+
+        fichajeAModificar = buscarFichajePorId(id);
+        if (fichajeAModificar != null){
+            fichajeAModificar.setPrecio(nuevoPrecio);
+            resultado = true;
+        } else {
+            resultado = false;
+        }
+
+        return resultado;
+    }
+
     // modificar fichaje por nombre
 
 
