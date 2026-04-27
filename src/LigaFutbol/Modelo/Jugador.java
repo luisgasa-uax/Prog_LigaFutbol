@@ -12,7 +12,6 @@ public class Jugador extends Fichaje {
         this.posicion = posicion;
     }
 
-
     public int getDorsal() {
         return dorsal;
     }
