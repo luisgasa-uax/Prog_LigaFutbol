@@ -23,9 +23,9 @@ public enum TipoEntrenador {
         
     @Override
     public String toString() {
-    StringBuilder sb= new StringBuilder();
-    sb.append(String.format("Valor: %d, Descripcion: %s", valor, descripcion));
-
-    return sb.toString();
+        StringBuilder sb= new StringBuilder();
+        sb.append(String.format("Valor: %d, Descripcion: %s", valor, descripcion));
+    
+        return sb.toString();
     }
 }

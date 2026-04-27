@@ -28,12 +28,15 @@ public enum TipoPosicion {
     public String getDescripcion() {
         return descripcion;
     }
-}
 
+    //todo dentro de la clase incluso el String builder bro ·<·
     @Override
     public String toString() {
-    StringBuilder sb= new StringBuilder();
-    sb.append(String.format("Valor: %d, Descripcion: %s", valor, descripcion));
+        StringBuilder sb= new StringBuilder();
+        sb.append(String.format("Valor: %d, Descripcion: %s", valor, descripcion));
 
-    return sb.toString();
+        return sb.toString();
     }
+}
+
+
