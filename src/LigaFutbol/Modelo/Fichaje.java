@@ -13,6 +13,10 @@ public class Fichaje {
         return nombre;
     }
 
+    public int getPrecio(){
+        return precio;
+    }
+
     @Override
     public String toString(){
         String resultado;
