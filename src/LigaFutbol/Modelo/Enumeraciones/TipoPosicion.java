@@ -28,12 +28,14 @@ public enum TipoPosicion {
     public String getDescripcion() {
         return descripcion;
     }
-}
 
     @Override
     public String toString() {
-    StringBuilder sb= new StringBuilder();
-    sb.append(String.format("Valor: %d, Descripcion: %s", valor, descripcion));
+        StringBuilder sb= new StringBuilder();
+        sb.append(String.format("Valor: %d, Descripcion: %s", valor, descripcion));
 
-    return sb.toString();
+        return sb.toString();
     }
+}
+
+
