@@ -81,7 +81,20 @@ public class Equipo {
     }
 
     // modificar fichaje por nombre
+    public boolean modificarFichajePorNombre(String nombre, int nuevoPrecio){
+        boolean resultado;
+        Fichaje fichajeAModificar;
 
+        fichajeAModificar = buscarFichajePorNombre(nombre);
+        if (fichajeAModificar != null){
+            fichajeAModificar.setPrecio(nuevoPrecio);
+            resultado = true;
+        } else {
+            resultado = false;
+        }
+
+        return resultado;
+    }
 
     // buscar fichaje por id
     public Fichaje buscarFichajePorId(int id){
