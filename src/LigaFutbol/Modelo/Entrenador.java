@@ -1,25 +1,29 @@
 package LigaFutbol.Modelo;
 
-public class Entrenador {
-    private String tipo;
+import LigaFutbol.Modelo.Enumeraciones.TipoEntrenador;
 
-    public Entrenador(String tipo) {
-        this.tipo = tipo;
+public class Entrenador extends Fichaje{
+    private TipoEntrenador tipoEntrenador;
+
+    public Entrenador(int id, String nombre, int precio,TipoEntrenador tipoEntrenador) {
+        super(id,nombre,precio);
+
+        this.tipoEntrenador = tipoEntrenador;
     }
 
-    public String getTipo() {
-        return tipo;
+    public TipoEntrenador getTipo() {
+        return tipoEntrenador;
     }
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    public void setTipo(TipoEntrenador tipo) {
+        this.tipoEntrenador = tipo;
     }
 
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
 
-        sb.append(String.format("TIPO = %s", tipo));
+        sb.append(String.format("TIPO = %s", tipoEntrenador));
 
         return toString();
     }
