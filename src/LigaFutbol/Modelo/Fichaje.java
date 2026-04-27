@@ -1,10 +1,12 @@
 package LigaFutbol.Modelo;
 
 public class Fichaje {
+    private int id;
     private String nombre;
     private int precio;
 
-    public Fichaje(String nombre, int precio) {
+    public Fichaje(int id, String nombre, int precio) {
+        this.id = id;
         this.nombre = nombre;
         this.precio = precio;
     }
@@ -16,11 +18,15 @@ public class Fichaje {
     public int getPrecio(){
         return precio;
     }
+    public int getId(){
+        return id;
+    }
 
     @Override
     public String toString(){
         String resultado;
-        resultado = String.format("%s",nombre);
+        resultado = String.format("%s - Precio: %d",nombre,precio);
         return resultado;
     }
+
 }
