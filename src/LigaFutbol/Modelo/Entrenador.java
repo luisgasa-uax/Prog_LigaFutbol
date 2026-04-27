@@ -1,4 +1,4 @@
 package LigaFutbol.Modelo;
 
-public class Fichaje {
+public class Entrenador {
 }

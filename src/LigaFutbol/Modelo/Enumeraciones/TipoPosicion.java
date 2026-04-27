@@ -1,4 +1,7 @@
 package LigaFutbol.Modelo.Enumeraciones;
 
-public class TipoPosiion {
+public enum TipoPosicion {
 }
+
+
+https://github.com/luisgasa-uax/Prog_LigaFutbol

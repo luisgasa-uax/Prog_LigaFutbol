@@ -1,4 +1,4 @@
-package LigaFutbol.Modelo;
+package LigaFutbol.Controlador;
 
 public class Equipo {
 }

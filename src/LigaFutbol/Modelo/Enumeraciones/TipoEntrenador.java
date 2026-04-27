@@ -1,4 +1,4 @@
 package LigaFutbol.Modelo.Enumeraciones;
 
-public class TipoEntrenador {
+public enum TipoEntrenador {
 }
